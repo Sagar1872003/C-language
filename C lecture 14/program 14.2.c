@@ -1,7 +1,7 @@
 #include <stdio.h>
 main() {
     int first, last, year, i;
-    int y[50];
+    int y[100];
     int c = 0;
 
     
