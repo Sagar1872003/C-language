@@ -1,32 +1,25 @@
 #include <stdio.h>
-
-#define MAX_SIZE 100 // Maximum size of input string
-
-int main() {
-    char str[MAX_SIZE];
-    int freq[256] = {0}; // Array to store frequency of characters, assuming ASCII characters
-
-    // Input string from the user
-    printf("Enter any string: ");
-    fgets(str, MAX_SIZE, stdin);
-
-    // Traverse the string and count frequency of each character
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            freq[str[i]]++; // Increment frequency of lowercase letters
-        } else if (str[i] >= 'A' && str[i] <= 'Z') {
-            freq[str[i] - 'A' + 'a']++; // Convert uppercase letters to lowercase and increment frequency
-        }
+main(){
+	
+	int i,len;
+	char string[50],freq[128] = {0}; 
+	
+	printf("Enter any string: ");
+    gets(string);
+    
+    len = strlen(string);
+  
+    for (i = 0; i < len; i++)
+	{
+        freq[string[i]]++;
     }
 
-    // Print frequency of each letter
     printf("Frequency of each letter:\n");
-    for (int i = 0; i < 256; i++) {
-        if (freq[i] != 0 && (i >= 'a' && i <= 'z')) {
+    for ( i = 0; i < 128; i++) 
+	{
+        if (freq[i] > 0) {
             printf("%c => %d\n", i, freq[i]);
         }
     }
 
-    return 0;
 }
-
