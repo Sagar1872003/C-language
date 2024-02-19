@@ -6,19 +6,19 @@ void sum(int x, int y){
 }
 
 void sub(int x, int y){
-    printf("substrecktion of %d and %d is %d \n\n",x,y,x-y);
+    printf("subtraction of %d and %d is %d \n\n",x,y,x-y);
 }
 
 void mul(int x, int y){
-    printf("multipltipliction of %d and %d is %d \n\n",x,y,x*y);
+    printf("multiplication of %d and %d is %d \n\n",x,y,x*y);
 }
 
 void div(int x, int y){
-    printf("devition of %d and %d is %d \n\n",x,y,x/y);
+    printf("division of %d and %d is %d \n\n",x,y,x/y);
 }
 
 void mod(int x, int y){
-    printf("modeulo of %d and %d is %d \n\n",x,y,x%y);
+    printf("modulo of %d and %d is %d \n\n",x,y,x%y);
 }
 
 
@@ -68,7 +68,6 @@ void main(){
                     break;
                    
                     default:
-                    printf("\n----------------------------------------------------\n");
                         printf("\n\nPLESE ENTER THE VALID NUMBER . . . \n\n");
                     break;
                 }
